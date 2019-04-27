@@ -19,7 +19,7 @@ const getRandomData = () => {
   }
 
   return {
-    email: faker.internet.email(),
+    email: faker.internet.email().toLowerCase(),
     name: faker.name.firstName(),
     pwd,
     surname: faker.name.lastName(),
