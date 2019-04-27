@@ -9,9 +9,11 @@ const router = express.Router();
 
 const getRandomData = () => {
   let username = Moniker.choose();
+  let pwd = Moniker.choose();
 
   try {
     username = username.split('-').map(capitalize).join('');
+    pwd = pwd.split('-').map(capitalize).join('');
   } catch (e) {
     console.error('Username manipulation', e);
   }
@@ -19,6 +21,7 @@ const getRandomData = () => {
   return {
     email: faker.internet.email(),
     name: faker.name.firstName(),
+    pwd,
     surname: faker.name.lastName(),
     username,
     zipcode: zipcodes.random(),
