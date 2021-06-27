@@ -17,7 +17,6 @@
     "express-healthcheck": "^0.1.0",
     "faker": "^4.1.0",
     "lodash.capitalize": "^4.2.1",
-    "moniker": "^0.1.2",
     "morgan": "^1.9.1",
     "zipcodes": "^8.0.0"
   }
